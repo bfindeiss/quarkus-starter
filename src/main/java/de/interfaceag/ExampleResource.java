@@ -20,16 +20,18 @@ public class ExampleResource {
 	@Context
 	private UriInfo uriInfo;
 
-	@ConfigProperty(name = "interface.greeting")
+	@ConfigProperty(name = "interface.neu")
 	private String halloAusProperty;
 
 	@ConfigProperty(name = "INTERFACE_GREETING")
 	private String halloAusEnvironment;
 
+
+
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String hello() {
-		return "hello";
+		return "InterFace";
 	}
 
 	@GET
